@@ -50,23 +50,28 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <button
-              onClick={() => handleNavClick('#home')}
-              className="flex items-center gap-3 group"
-            >
-              <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110"
-                style={{ background: 'linear-gradient(135deg, #d4a017, #f5c842)' }}>
-                <Leaf className="w-5 h-5" style={{ color: '#0d3d1a' }} strokeWidth={2.5} />
-              </div>
-              <div className="text-left">
-                <div className="text-white font-bold text-base leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
-                  Shubham Agri
+              <button
+                onClick={() => handleNavClick('#home')}
+                className="flex items-center gap-2 group"
+              >
+                <div className="relative w-12 h-12 flex-shrink-0 transition-transform group-hover:scale-105 rounded-full overflow-hidden bg-white">
+                  <Image
+                    src="/logo.jpg"
+                    alt="Shubham Agri Seeds Logo"
+                    fill
+                    className="object-contain p-0.5"
+                    priority
+                  />
                 </div>
-                <div className="text-xs font-medium tracking-widest leading-tight" style={{ color: '#d4a017' }}>
-                  SEEDS
+                <div className="text-left hidden sm:block">
+                  <div className="text-white font-bold text-base leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
+                    Shubham Agri
+                  </div>
+                  <div className="text-xs font-medium tracking-widest leading-tight" style={{ color: '#d4a017' }}>
+                    SEEDS
+                  </div>
                 </div>
-              </div>
-            </button>
+              </button>
 
             {/* Desktop Nav */}
             <div className="hidden lg:flex items-center gap-1">
