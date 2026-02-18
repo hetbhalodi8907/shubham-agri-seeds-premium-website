@@ -56,17 +56,17 @@ export default function Footer() {
                 <ExternalLink className="w-3 h-3" /> Open Maps
               </a>
             </div>
-            <div className="relative w-full" style={{ paddingBottom: '40%', minHeight: '220px' }}>
-              <iframe
+              <div className="relative w-full" style={{ paddingBottom: '40%', minHeight: '220px' }}>
+                <iframe
                   title="Shubham Agri Seeds Location - Sondarda, Keshod, Gujarat"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.0!2d70.2530!3d21.2995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be277f5c4a00001%3A0x0!2s7793%2B8Q+Sondarda%2C+Gujarat!5e0!3m2!1sen!2sin!4v1700000000000"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475914.1829563522!2d69.64470608906248!3d21.26831830000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bfd5064e1729cd1%3A0xb4fb80d43b91f87e!2sShubham%20Agri%20Seeds!5e0!3m2!1sen!2sin!4v1771437005763!5m2!1sen!2sin"
                   className="absolute inset-0 w-full h-full"
                   style={{ border: 0, filter: 'grayscale(20%) contrast(1.05)' }}
-                  allowFullScreen={false}
+                  allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
-            </div>
+              </div>
           </motion.div>
         </div>
       </div>
