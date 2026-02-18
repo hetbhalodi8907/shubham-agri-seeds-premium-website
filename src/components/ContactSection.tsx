@@ -178,7 +178,7 @@ export default function ContactSection() {
 
             {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/?text=Hello%20Shubham%20Agri%20Seeds%2C%20I%20am%20interested%20in%20your%20seeds."
+              href="https://wa.me/?text=Hello%20Shubham%20Agri%20Seeds%2C%20I%20am%20interested%20in%20your%20seeds.%20My%20location%3A%20https%3A%2F%2Fmaps.google.com%2F%3Fq%3D7793%2B8Q%2BSondarda%2CGujarat"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-5 rounded-2xl transition-all duration-300 hover:scale-[1.02]"
