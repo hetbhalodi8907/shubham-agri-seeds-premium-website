@@ -43,33 +43,30 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
 
           {/* Main content */}
           <div className="relative z-10 flex flex-col items-center gap-6 px-6 text-center">
-            {/* Logo/Icon */}
-            <motion.div
-              initial={{ scale: 0, rotate: -30 }}
-              animate={{ scale: 1, rotate: 0 }}
-              transition={{ type: 'spring', stiffness: 200, damping: 15, delay: 0.1 }}
-              className="relative"
-            >
-              <div className="w-28 h-28 rounded-full flex items-center justify-center relative animate-pulse-glow"
-                style={{ background: 'linear-gradient(135deg, #d4a017, #f5c842, #d4a017)' }}>
-                <svg viewBox="0 0 80 80" className="w-16 h-16" fill="none">
-                  {/* Stylized groundnut/seed leaf logo */}
-                  <ellipse cx="40" cy="32" rx="14" ry="22" fill="#0d3d1a" opacity="0.9" transform="rotate(-15 40 32)" />
-                  <ellipse cx="40" cy="32" rx="14" ry="22" fill="#1a5c2a" opacity="0.8" transform="rotate(15 40 32)" />
-                  <ellipse cx="40" cy="38" rx="10" ry="16" fill="#0d3d1a" opacity="1" />
-                  <circle cx="40" cy="58" r="8" fill="#0d3d1a" />
-                  <circle cx="40" cy="58" r="6" fill="#1a5c2a" />
-                  <line x1="40" y1="42" x2="40" y2="50" stroke="#d4a017" strokeWidth="2.5" strokeLinecap="round" />
-                  <circle cx="40" cy="38" r="4" fill="#d4a017" opacity="0.9" />
-                </svg>
-              </div>
-              {/* Gold ring */}
+              {/* Logo Image */}
               <motion.div
-                className="absolute inset-0 rounded-full border-2 border-yellow-400 opacity-60"
-                animate={{ scale: [1, 1.2, 1], opacity: [0.6, 0, 0.6] }}
-                transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-              />
-            </motion.div>
+                initial={{ scale: 0, rotate: -20 }}
+                animate={{ scale: 1, rotate: 0 }}
+                transition={{ type: 'spring', stiffness: 180, damping: 14, delay: 0.1 }}
+                className="relative"
+              >
+                <div className="w-36 h-36 rounded-full bg-white shadow-2xl flex items-center justify-center relative overflow-hidden"
+                  style={{ boxShadow: '0 0 40px rgba(212,160,23,0.5), 0 0 80px rgba(212,160,23,0.2)' }}>
+                  <Image
+                    src="/logo.jpg"
+                    alt="Shubham Agri Seeds"
+                    fill
+                    className="object-contain p-2"
+                    priority
+                  />
+                </div>
+                {/* Gold ring pulse */}
+                <motion.div
+                  className="absolute inset-0 rounded-full border-2 border-yellow-400 opacity-60"
+                  animate={{ scale: [1, 1.25, 1], opacity: [0.6, 0, 0.6] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+                />
+              </motion.div>
 
             {/* Company Name */}
             <motion.div
