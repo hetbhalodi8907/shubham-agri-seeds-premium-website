@@ -46,8 +46,8 @@ export default function Footer() {
               <span className="text-sm font-semibold text-white/80" style={{ fontFamily: 'system-ui, sans-serif' }}>
                 Opp. Ganesh Weighbridge, Veraval Road, Sondarada, Keshod, Gujarat
               </span>
-              <a
-                  href="https://maps.google.com/?q=7793+8Q+Sondarda,Gujarat,India"
+                <a
+                    href="https://maps.google.com/?cid=13006820419832938366"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ml-auto flex items-center gap-1 text-xs px-3 py-1 rounded-full transition-all hover:opacity-80"
