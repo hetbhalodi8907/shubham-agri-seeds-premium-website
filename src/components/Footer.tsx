@@ -58,14 +58,14 @@ export default function Footer() {
             </div>
             <div className="relative w-full" style={{ paddingBottom: '40%', minHeight: '220px' }}>
               <iframe
-                title="Shubham Agri Seeds Location - Keshod, Gujarat"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14848.15!2d70.2455!3d21.3007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2a5c2b7c8e0a1%3A0x8e4d3b6f2c1a5d7e!2sKeshod%2C+Gujarat!5e0!3m2!1sen!2sin!4v1700000000000"
-                className="absolute inset-0 w-full h-full"
-                style={{ border: 0, filter: 'grayscale(20%) contrast(1.05)' }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+                  title="Shubham Agri Seeds Location - Sondarda, Keshod, Gujarat"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.0!2d70.2530!3d21.2995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be277f5c4a00001%3A0x0!2s7793%2B8Q+Sondarda%2C+Gujarat!5e0!3m2!1sen!2sin!4v1700000000000"
+                  className="absolute inset-0 w-full h-full"
+                  style={{ border: 0, filter: 'grayscale(20%) contrast(1.05)' }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
             </div>
           </motion.div>
         </div>
