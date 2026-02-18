@@ -47,7 +47,7 @@ export default function Footer() {
                 Opp. Ganesh Weighbridge, Veraval Road, Sondarada, Keshod, Gujarat
               </span>
               <a
-                href="https://maps.google.com/?q=Keshod,Gujarat,India"
+                  href="https://maps.google.com/?q=7793+8Q+Sondarda,Gujarat,India"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ml-auto flex items-center gap-1 text-xs px-3 py-1 rounded-full transition-all hover:opacity-80"
