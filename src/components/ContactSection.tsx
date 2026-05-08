@@ -50,7 +50,7 @@ export default function ContactSection() {
     // Simulate brief delay then open email client
     await new Promise((r) => setTimeout(r, 800));
 
-    window.location.href = `mailto:shubhamagriseeds333@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hetbhalodi8907@gmail.com?subject=${subject}&body=${body}`;
     setStatus('sent');
 
     setTimeout(() => {
@@ -138,8 +138,8 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <div className="text-xs font-semibold tracking-wide uppercase mb-1" style={{ color: '#d4a017', fontFamily: 'system-ui, sans-serif' }}>Email</div>
-                      <a href="mailto:shubhamagriseeds333@gmail.com" className="text-sm text-white/80 hover:text-white transition-colors" style={{ fontFamily: 'system-ui, sans-serif' }}>
-                        shubhamagriseeds333@gmail.com
+                      <a href="mailto:hetbhalodi8907@gmail.com" className="text-sm text-white/80 hover:text-white transition-colors" style={{ fontFamily: 'system-ui, sans-serif' }}>
+                        hetbhalodi8907@gmail.com
                       </a>
                     </div>
                   </div>
@@ -358,7 +358,7 @@ export default function ContactSection() {
                   </button>
 
                   <p className="text-center text-xs text-gray-400 mt-2" style={{ fontFamily: 'system-ui, sans-serif' }}>
-                    Your enquiry will be sent to shubhamagriseeds333@gmail.com
+                    Your enquiry will be sent to hetbhalodi8907@gmail.com
                   </p>
                 </form>
               )}

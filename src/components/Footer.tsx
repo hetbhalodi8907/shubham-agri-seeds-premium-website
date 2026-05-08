@@ -95,12 +95,12 @@ export default function Footer() {
             </p>
             {/* Social/Contact mini row */}
             <a
-              href="mailto:shubhamagriseeds333@gmail.com"
+              href="mailto:hetbhalodi8907@gmail.com"
               className="flex items-center gap-2 text-sm transition-colors hover:opacity-80"
               style={{ color: '#d4a017', fontFamily: 'system-ui, sans-serif' }}
             >
               <Mail className="w-4 h-4" />
-              shubhamagriseeds333@gmail.com
+              hetbhalodi8907@gmail.com
             </a>
           </div>
 

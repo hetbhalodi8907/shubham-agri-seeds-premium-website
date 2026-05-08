@@ -5,10 +5,10 @@ import { motion, useInView } from 'framer-motion';
 import { Award, Users, Leaf, Star, CheckCircle, TrendingUp, Droplets, Shield, Zap } from 'lucide-react';
 
 const stats = [
-  { value: '18+', label: 'Years of Excellence', icon: Award, color: '#d4a017' },
-  { value: '10+', label: 'Premium Varieties', icon: Leaf, color: '#1a5c2a' },
-  { value: '1000s', label: 'Satisfied Farmers', icon: Users, color: '#d4a017' },
-  { value: '99%', label: 'Customer Trust Rate', icon: Star, color: '#1a5c2a' },
+  { value: '18+', label: 'Years of Excellence', icon: Award, color: '#df7810' },
+  { value: '10+', label: 'Premium Varieties', icon: Leaf, color: '#0e6578' },
+  { value: '1000s', label: 'Satisfied Farmers', icon: Users, color: '#df7810' },
+  { value: '99%', label: 'Customer Trust Rate', icon: Star, color: '#0e6578' },
 ];
 
 const whyPoints = [
@@ -48,13 +48,13 @@ const testimonials = [
   {
     name: 'Rameshbhai Patel',
     location: 'Farmer, Keshod',
-    text: 'Shubham Agri Seeds has been my go-to for the last 10 years. Girnar 4 variety gave me record yield this season. Excellent quality and honest service.',
+    text: 'Shaswat Agri Seeds has been my go-to for the last 10 years. Girnar 4 variety gave me record yield this season. Excellent quality and honest service.',
     stars: 5,
   },
   {
     name: 'Bharatbhai Makwana',
     location: 'Farmer, Veraval',
-    text: 'The G-32 seeds from Shubham gave the best oil content I have seen in 15 years of farming. Highly recommend for any groundnut grower.',
+    text: 'The G-32 seeds from Shaswat gave the best oil content I have seen in 15 years of farming. Highly recommend for any groundnut grower.',
     stars: 5,
   },
   {
@@ -72,7 +72,7 @@ export default function WhyUsSection() {
   return (
     <section id="why-us" className="relative overflow-hidden">
       {/* Stats band */}
-      <div className="py-16 lg:py-20 relative" style={{ background: 'linear-gradient(135deg, #0d3d1a 0%, #1a5c2a 50%, #2e7d32 100%)' }}>
+      <div className="py-16 lg:py-20 relative" style={{ background: 'linear-gradient(135deg, #093a46 0%, #0e6578 50%, #158899 100%)' }}>
         {/* Background texture */}
         <div className="absolute inset-0 opacity-[0.04] pointer-events-none"
           style={{
@@ -105,7 +105,7 @@ export default function WhyUsSection() {
                   style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)' }}
                 >
                   <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4"
-                    style={{ background: stat.color === '#d4a017' ? 'rgba(212,160,23,0.2)' : 'rgba(255,255,255,0.1)' }}>
+                    style={{ background: stat.color === '#df7810' ? 'rgba(223,120,16,0.2)' : 'rgba(255,255,255,0.1)' }}>
                     <Icon className="w-7 h-7" style={{ color: stat.color }} />
                   </div>
                   <div className="text-4xl font-bold mb-1" style={{ color: stat.color, fontFamily: 'Georgia, serif' }}>
@@ -131,18 +131,18 @@ export default function WhyUsSection() {
             className="text-center mb-14"
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4 border"
-              style={{ background: '#e8f5e9', borderColor: '#c8e6c9', color: '#1a5c2a' }}>
+              style={{ background: '#dff0f7', borderColor: '#a8d5e5', color: '#0e6578' }}>
               <Award className="w-4 h-4" />
               <span className="text-sm font-semibold tracking-wide uppercase" style={{ fontFamily: 'system-ui, sans-serif' }}>
                 Why Choose Us
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" style={{ fontFamily: 'Georgia, serif', color: '#0d3d1a' }}>
-              The <span style={{ color: '#1a5c2a' }}>Shubham</span> Difference
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" style={{ fontFamily: 'Georgia, serif', color: '#093a46' }}>
+              The <span style={{ color: '#0e6578' }}>Shaswat</span> Difference
             </h2>
             <div className="section-divider mb-6" />
             <p className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg" style={{ fontFamily: 'system-ui, sans-serif', lineHeight: 1.8 }}>
-              18 years of dedication to one mission — putting the best possible seeds in every farmer's hand.
+              18 years of dedication to one mission — putting the best possible seeds in every farmer&apos;s hand.
             </p>
           </motion.div>
 
@@ -156,23 +156,23 @@ export default function WhyUsSection() {
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.1 + i * 0.1, duration: 0.5 }}
                   className="p-6 rounded-2xl bg-white border transition-all duration-300 group cursor-default"
-                  style={{ borderColor: '#e8f5e9', borderWidth: '1.5px', boxShadow: '0 2px 12px rgba(13,61,26,0.05)' }}
+                  style={{ borderColor: '#dff0f7', borderWidth: '1.5px', boxShadow: '0 2px 12px rgba(9,58,70,0.05)' }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = i % 2 === 0 ? '#1a5c2a' : '#d4a017';
-                    e.currentTarget.style.boxShadow = '0 12px 35px rgba(13,61,26,0.12)';
+                    e.currentTarget.style.borderColor = i % 2 === 0 ? '#0e6578' : '#df7810';
+                    e.currentTarget.style.boxShadow = '0 12px 35px rgba(9,58,70,0.12)';
                     e.currentTarget.style.transform = 'translateY(-4px)';
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = '#e8f5e9';
-                    e.currentTarget.style.boxShadow = '0 2px 12px rgba(13,61,26,0.05)';
+                    e.currentTarget.style.borderColor = '#dff0f7';
+                    e.currentTarget.style.boxShadow = '0 2px 12px rgba(9,58,70,0.05)';
                     e.currentTarget.style.transform = '';
                   }}
                 >
                   <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4"
-                    style={{ background: i % 2 === 0 ? '#e8f5e9' : '#fef9e7' }}>
-                    <Icon className="w-6 h-6" style={{ color: i % 2 === 0 ? '#1a5c2a' : '#d4a017' }} />
+                    style={{ background: i % 2 === 0 ? '#dff0f7' : '#fef3e7' }}>
+                    <Icon className="w-6 h-6" style={{ color: i % 2 === 0 ? '#0e6578' : '#df7810' }} />
                   </div>
-                  <h3 className="font-bold text-base mb-2" style={{ fontFamily: 'Georgia, serif', color: '#0d3d1a' }}>
+                  <h3 className="font-bold text-base mb-2" style={{ fontFamily: 'Georgia, serif', color: '#093a46' }}>
                     {point.title}
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed" style={{ fontFamily: 'system-ui, sans-serif', lineHeight: 1.7 }}>
@@ -186,7 +186,7 @@ export default function WhyUsSection() {
       </div>
 
       {/* Testimonials */}
-      <div className="py-16 lg:py-20 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #f1f8e9 0%, #e8f5e9 100%)' }}>
+      <div className="py-16 lg:py-20 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #e5f4fa 0%, #dff0f7 100%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -194,7 +194,7 @@ export default function WhyUsSection() {
             viewport={{ once: true, margin: '-60px' }}
             className="text-center mb-12"
           >
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3" style={{ fontFamily: 'Georgia, serif', color: '#0d3d1a' }}>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3" style={{ fontFamily: 'Georgia, serif', color: '#093a46' }}>
               What Our Farmers Say
             </h2>
             <div className="section-divider" />
@@ -209,26 +209,26 @@ export default function WhyUsSection() {
                 viewport={{ once: true, margin: '-40px' }}
                 transition={{ delay: i * 0.15, duration: 0.5 }}
                 className="p-6 rounded-2xl bg-white"
-                style={{ boxShadow: '0 4px 20px rgba(13,61,26,0.08)', border: '1.5px solid #e8f5e9' }}
+                style={{ boxShadow: '0 4px 20px rgba(9,58,70,0.08)', border: '1.5px solid #dff0f7' }}
               >
                 {/* Stars */}
                 <div className="flex gap-0.5 mb-4">
                   {[...Array(t.stars)].map((_, si) => (
-                    <Star key={si} className="w-4 h-4 fill-current" style={{ color: '#d4a017' }} />
+                    <Star key={si} className="w-4 h-4 fill-current" style={{ color: '#df7810' }} />
                   ))}
                 </div>
                 {/* Quote */}
                 <p className="text-gray-700 text-sm leading-relaxed mb-4 italic" style={{ fontFamily: 'Georgia, serif' }}>
-                  "{t.text}"
+                  &quot;{t.text}&quot;
                 </p>
                 {/* Author */}
-                <div className="flex items-center gap-3 pt-3" style={{ borderTop: '1px solid #e8f5e9' }}>
+                <div className="flex items-center gap-3 pt-3" style={{ borderTop: '1px solid #dff0f7' }}>
                   <div className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white flex-shrink-0"
-                    style={{ background: 'linear-gradient(135deg, #1a5c2a, #2e7d32)', fontSize: '14px' }}>
+                    style={{ background: 'linear-gradient(135deg, #0e6578, #158899)', fontSize: '14px' }}>
                     {t.name.charAt(0)}
                   </div>
                   <div>
-                    <div className="font-semibold text-sm" style={{ color: '#0d3d1a', fontFamily: 'system-ui, sans-serif' }}>{t.name}</div>
+                    <div className="font-semibold text-sm" style={{ color: '#093a46', fontFamily: 'system-ui, sans-serif' }}>{t.name}</div>
                     <div className="text-xs text-gray-500" style={{ fontFamily: 'system-ui, sans-serif' }}>{t.location}</div>
                   </div>
                 </div>

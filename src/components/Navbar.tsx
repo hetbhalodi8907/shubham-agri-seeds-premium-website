@@ -40,11 +40,11 @@ export default function Navbar() {
         className="fixed top-0 left-0 right-0 z-[100] transition-all duration-300"
         style={{
           background: scrolled
-            ? 'rgba(13, 61, 26, 0.97)'
-            : 'linear-gradient(180deg, rgba(13,61,26,0.95) 0%, rgba(13,61,26,0.7) 100%)',
+            ? 'rgba(9, 58, 70, 0.97)'
+            : 'linear-gradient(180deg, rgba(9,58,70,0.95) 0%, rgba(9,58,70,0.7) 100%)',
           backdropFilter: scrolled ? 'blur(12px)' : 'blur(4px)',
-          boxShadow: scrolled ? '0 2px 30px rgba(13, 61, 26, 0.35)' : 'none',
-          borderBottom: scrolled ? '1px solid rgba(212, 160, 23, 0.2)' : 'none',
+          boxShadow: scrolled ? '0 2px 30px rgba(9, 58, 70, 0.35)' : 'none',
+          borderBottom: scrolled ? '1px solid rgba(223, 120, 16, 0.2)' : 'none',
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,8 +56,8 @@ export default function Navbar() {
               >
                 <div className="relative w-12 h-12 flex-shrink-0 transition-transform group-hover:scale-105 rounded-full overflow-hidden bg-white">
                   <Image
-                    src="/logo.jpg"
-                    alt="Shubham Agri Seeds Logo"
+                    src="/logo.png"
+                    alt="Shaswat Agri Seeds Logo"
                     fill
                     className="object-contain p-0.5"
                     priority
@@ -65,9 +65,9 @@ export default function Navbar() {
                 </div>
                 <div className="text-left hidden sm:block">
                   <div className="text-white font-bold text-base leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
-                    Shubham Agri
+                    Shaswat Agri
                   </div>
-                  <div className="text-xs font-medium tracking-widest leading-tight" style={{ color: '#d4a017' }}>
+                  <div className="text-xs font-medium tracking-widest leading-tight" style={{ color: '#f5a028' }}>
                     SEEDS
                   </div>
                 </div>
@@ -81,7 +81,7 @@ export default function Navbar() {
                   onClick={() => handleNavClick(link.href)}
                   className="relative px-4 py-2 text-sm font-medium transition-colors duration-200 rounded-lg"
                   style={{
-                    color: activeLink === link.href ? '#d4a017' : 'rgba(255,255,255,0.85)',
+                    color: activeLink === link.href ? '#f5a028' : 'rgba(255,255,255,0.85)',
                     fontFamily: 'system-ui, sans-serif',
                     letterSpacing: '0.03em',
                   }}
@@ -91,7 +91,7 @@ export default function Navbar() {
                     <motion.div
                       layoutId="activeNav"
                       className="absolute bottom-0 left-1/2 -translate-x-1/2 w-5 h-0.5 rounded-full"
-                      style={{ backgroundColor: '#d4a017' }}
+                      style={{ backgroundColor: '#f5a028' }}
                     />
                   )}
                 </button>
@@ -100,9 +100,9 @@ export default function Navbar() {
                 onClick={() => handleNavClick('#contact')}
                 className="ml-4 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 hover:scale-105"
                 style={{
-                  background: 'linear-gradient(135deg, #d4a017, #f5c842)',
-                  color: '#0d3d1a',
-                  boxShadow: '0 4px 15px rgba(212,160,23,0.35)',
+                  background: 'linear-gradient(135deg, #df7810, #f5a028)',
+                  color: '#093a46',
+                  boxShadow: '0 4px 15px rgba(223,120,16,0.35)',
                   fontFamily: 'system-ui, sans-serif',
                 }}
               >
@@ -131,17 +131,17 @@ export default function Navbar() {
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
               className="lg:hidden overflow-hidden"
-              style={{ borderTop: '1px solid rgba(212, 160, 23, 0.2)' }}
+              style={{ borderTop: '1px solid rgba(223, 120, 16, 0.2)' }}
             >
-              <div className="px-4 py-4 space-y-1" style={{ background: 'rgba(13, 61, 26, 0.98)' }}>
+              <div className="px-4 py-4 space-y-1" style={{ background: 'rgba(9, 58, 70, 0.98)' }}>
                 {navLinks.map((link) => (
                   <button
                     key={link.href}
                     onClick={() => handleNavClick(link.href)}
                     className="w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-colors"
                     style={{
-                      color: activeLink === link.href ? '#d4a017' : 'rgba(255,255,255,0.85)',
-                      background: activeLink === link.href ? 'rgba(212,160,23,0.1)' : 'transparent',
+                      color: activeLink === link.href ? '#f5a028' : 'rgba(255,255,255,0.85)',
+                      background: activeLink === link.href ? 'rgba(223,120,16,0.1)' : 'transparent',
                       fontFamily: 'system-ui, sans-serif',
                     }}
                   >
@@ -152,8 +152,8 @@ export default function Navbar() {
                   onClick={() => handleNavClick('#contact')}
                   className="w-full mt-2 px-4 py-3 rounded-full text-sm font-semibold text-center"
                   style={{
-                    background: 'linear-gradient(135deg, #d4a017, #f5c842)',
-                    color: '#0d3d1a',
+                    background: 'linear-gradient(135deg, #df7810, #f5a028)',
+                    color: '#093a46',
                     fontFamily: 'system-ui, sans-serif',
                   }}
                 >

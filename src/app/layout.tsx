@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shubham Agri Seeds – 18 Years of Trust in Premium Groundnut & Hybrid Seeds",
+  title: "Shaswat Agri Seeds – Premium Groundnut & Hybrid Seeds, Keshod Gujarat",
   description:
-    "Shubham Agri Seeds, Keshod, Gujarat – Trusted premium groundnut seed supplier for 18+ years. Supplying G-20, G-22, G-32, Girnar 4, Girnar 5, Sona and more. High germination rate, high oil content, strong yield performance.",
+    "Shaswat Agri Seeds, Keshod, Gujarat – Trusted premium groundnut seed supplier. Supplying G-20, G-22, G-32, Girnar 4, Girnar 5, Sona and more. High germination rate, high oil content, strong yield performance.",
   keywords: [
     "groundnut seeds Keshod",
     "hybrid groundnut seeds Gujarat",
@@ -28,29 +28,29 @@ export const metadata: Metadata = {
     "Sona groundnut variety",
     "groundnut seeds dealer Keshod",
     "agriculture seeds Gujarat",
-    "Shubham Agri Seeds",
+    "Shaswat Agri Seeds",
     "high oil content groundnut",
     "high yield groundnut seeds",
     "certified seeds Keshod",
     "farm seeds Veraval Road",
     "quality tested seeds Gujarat",
   ].join(", "),
-  authors: [{ name: "Shubham Agri Seeds" }],
-  creator: "Shubham Agri Seeds",
-  publisher: "Shubham Agri Seeds",
+  authors: [{ name: "Shaswat Agri Seeds" }],
+  creator: "Shaswat Agri Seeds",
+  publisher: "Shaswat Agri Seeds",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    title: "Shubham Agri Seeds – Premium Groundnut & Hybrid Seeds, Keshod Gujarat",
+    title: "Shaswat Agri Seeds – Premium Groundnut & Hybrid Seeds, Keshod Gujarat",
     description:
-      "18 years of trust in premium groundnut seeds. G-20, G-22, G-32, G-24, No.37-39, Sona, Girnar 4 & 5. High germination, high oil content. Keshod, Gujarat, India.",
-    siteName: "Shubham Agri Seeds",
+      "Premium groundnut seeds. G-20, G-22, G-32, G-24, No.37-39, Sona, Girnar 4 & 5. High germination, high oil content. Keshod, Gujarat, India.",
+    siteName: "Shaswat Agri Seeds",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shubham Agri Seeds – Premium Groundnut Seeds Gujarat",
+    title: "Shaswat Agri Seeds – Premium Groundnut Seeds Gujarat",
     description:
-      "Premium quality groundnut & hybrid seeds. 18+ years serving farmers in Gujarat. High yield, high oil content varieties.",
+      "Premium quality groundnut & hybrid seeds. Serving farmers in Gujarat. High yield, high oil content varieties.",
   },
   robots: {
     index: true,
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://shubhamagriseeds.com",
+    canonical: "https://shaswatagri.com",
   },
 };
 
@@ -84,17 +84,19 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Shubham Agri Seeds",
+              name: "Shaswat Agri Seeds",
               description:
-                "Premium quality groundnut and hybrid seeds supplier in Keshod, Gujarat. 18+ years of trusted agricultural seed supply.",
+                "Premium quality groundnut and hybrid seeds supplier in Keshod, Gujarat.",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Opp. Ganesh Weighbridge, Veraval Road, Sondarada",
-                addressLocality: "Keshod",
+                streetAddress: "Plot No 2/3, SR.No 62/P1, Om Industries Area, Opp. Ganesh Way-Bridge",
+                addressLocality: "Sondarda, Keshod",
                 addressRegion: "Gujarat",
+                postalCode: "362227",
                 addressCountry: "IN",
               },
-              email: "shubhamagriseeds333@gmail.com",
+              email: "shaswatagri@gmail.com",
+              telephone: "+919429764078",
               foundingDate: "2006",
               areaServed: "Gujarat, India",
               hasOfferCatalog: {

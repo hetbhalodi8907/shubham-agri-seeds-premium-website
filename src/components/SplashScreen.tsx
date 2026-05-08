@@ -20,7 +20,7 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
         <motion.div
           key="splash"
           className="fixed inset-0 z-[9999] flex flex-col items-center justify-center overflow-hidden"
-          style={{ background: 'linear-gradient(135deg, #0a2e10 0%, #0d3d1a 40%, #1a5c2a 70%, #2e7d32 100%)' }}
+          style={{ background: 'linear-gradient(135deg, #061e28 0%, #093a46 40%, #0e6578 70%, #158899 100%)' }}
           exit={{ opacity: 0, scale: 1.08 }}
           transition={{ duration: 0.8, ease: 'easeInOut' }}
         >
@@ -31,7 +31,7 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2 }}
             style={{
-              background: 'radial-gradient(ellipse 70% 60% at 50% 50%, rgba(212,160,23,0.12) 0%, transparent 70%)',
+              background: 'radial-gradient(ellipse 70% 60% at 50% 50%, rgba(223,120,16,0.12) 0%, transparent 70%)',
             }}
           />
 
@@ -44,19 +44,19 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
 
           {/* Corner accents */}
           <div className="absolute top-0 left-0 w-40 h-40 opacity-20 pointer-events-none"
-            style={{ background: 'radial-gradient(circle at 0% 0%, #d4a017, transparent 70%)' }} />
+            style={{ background: 'radial-gradient(circle at 0% 0%, #df7810, transparent 70%)' }} />
           <div className="absolute bottom-0 right-0 w-40 h-40 opacity-20 pointer-events-none"
-            style={{ background: 'radial-gradient(circle at 100% 100%, #d4a017, transparent 70%)' }} />
+            style={{ background: 'radial-gradient(circle at 100% 100%, #df7810, transparent 70%)' }} />
 
           {/* Orbiting ring (large) */}
           <motion.div
-            className="absolute rounded-full border border-yellow-500/20"
+            className="absolute rounded-full border border-orange-500/20"
             style={{ width: '70vmin', height: '70vmin' }}
             animate={{ rotate: 360 }}
             transition={{ duration: 18, repeat: Infinity, ease: 'linear' }}
           />
           <motion.div
-            className="absolute rounded-full border border-green-400/10"
+            className="absolute rounded-full border border-teal-400/10"
             style={{ width: '85vmin', height: '85vmin' }}
             animate={{ rotate: -360 }}
             transition={{ duration: 26, repeat: Infinity, ease: 'linear' }}
@@ -78,7 +78,7 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
                 style={{
                   width: '52vmin',
                   height: '52vmin',
-                  border: '2px solid rgba(212,160,23,0.55)',
+                  border: '2px solid rgba(223,120,16,0.55)',
                 }}
                 animate={{ scale: [1, 1.18, 1], opacity: [0.55, 0, 0.55] }}
                 transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
@@ -89,7 +89,7 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
                 style={{
                   width: '58vmin',
                   height: '58vmin',
-                  border: '1px solid rgba(212,160,23,0.25)',
+                  border: '1px solid rgba(223,120,16,0.25)',
                 }}
                 animate={{ scale: [1, 1.12, 1], opacity: [0.3, 0, 0.3] }}
                 transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
@@ -105,18 +105,18 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
                   minHeight: 180,
                   maxWidth: 380,
                   maxHeight: 380,
-                  boxShadow: '0 0 60px rgba(212,160,23,0.45), 0 0 120px rgba(212,160,23,0.15), 0 20px 60px rgba(0,0,0,0.5)',
+                  boxShadow: '0 0 60px rgba(223,120,16,0.45), 0 0 120px rgba(223,120,16,0.15), 0 20px 60px rgba(0,0,0,0.5)',
                 }}
                 animate={{ boxShadow: [
-                  '0 0 60px rgba(212,160,23,0.45), 0 0 120px rgba(212,160,23,0.15), 0 20px 60px rgba(0,0,0,0.5)',
-                  '0 0 80px rgba(212,160,23,0.7), 0 0 160px rgba(212,160,23,0.25), 0 20px 60px rgba(0,0,0,0.5)',
-                  '0 0 60px rgba(212,160,23,0.45), 0 0 120px rgba(212,160,23,0.15), 0 20px 60px rgba(0,0,0,0.5)',
+                  '0 0 60px rgba(223,120,16,0.45), 0 0 120px rgba(223,120,16,0.15), 0 20px 60px rgba(0,0,0,0.5)',
+                  '0 0 80px rgba(223,120,16,0.7), 0 0 160px rgba(223,120,16,0.25), 0 20px 60px rgba(0,0,0,0.5)',
+                  '0 0 60px rgba(223,120,16,0.45), 0 0 120px rgba(223,120,16,0.15), 0 20px 60px rgba(0,0,0,0.5)',
                 ]}}
                 transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
               >
                 <Image
-                  src="/logo.jpg"
-                  alt="Shubham Agri Seeds Logo"
+                  src="/logo.png"
+                  alt="Shaswat Agri Seeds Logo"
                   fill
                   className="object-contain p-4"
                   priority
@@ -135,11 +135,11 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
                 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight"
                 style={{ fontFamily: 'Georgia, serif', textShadow: '0 2px 24px rgba(0,0,0,0.4)' }}
               >
-                Shubham
+                Shaswat
               </h1>
               <h1
                 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight"
-                style={{ color: '#d4a017', fontFamily: 'Georgia, serif', textShadow: '0 2px 24px rgba(0,0,0,0.4)' }}
+                style={{ color: '#f5a028', fontFamily: 'Georgia, serif', textShadow: '0 2px 24px rgba(0,0,0,0.4)' }}
               >
                 Agri Seeds
               </h1>
@@ -157,16 +157,16 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
                   <div className="flex items-center gap-3">
                     <motion.div
                       className="h-px rounded-full"
-                      style={{ background: 'linear-gradient(to right, transparent, #d4a017)', width: 48 }}
+                      style={{ background: 'linear-gradient(to right, transparent, #df7810)', width: 48 }}
                       initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.5 }}
                     />
                     <p className="text-base sm:text-xl text-white/90 font-light tracking-widest uppercase"
                       style={{ fontFamily: 'Georgia, serif', letterSpacing: '0.15em' }}>
-                      18 Years of Trust
+                      Premium Quality Seeds
                     </p>
                     <motion.div
                       className="h-px rounded-full"
-                      style={{ background: 'linear-gradient(to left, transparent, #d4a017)', width: 48 }}
+                      style={{ background: 'linear-gradient(to left, transparent, #df7810)', width: 48 }}
                       initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.5 }}
                     />
                   </div>
@@ -188,7 +188,7 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
                 <motion.div
                   key={i}
                   className="w-2 h-2 rounded-full"
-                  style={{ backgroundColor: '#d4a017' }}
+                  style={{ backgroundColor: '#df7810' }}
                   animate={{ scale: [1, 1.6, 1], opacity: [0.4, 1, 0.4] }}
                   transition={{ duration: 1, repeat: Infinity, delay: i * 0.22 }}
                 />
